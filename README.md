@@ -27,8 +27,8 @@ The dashboard includes four KPI cards and seven charts:
 | Sales Detail | 3,000 sales records with date, salesperson, region, product, quantity, and amount |
 | Target Detail | 80 monthly target and actual records |
 | Product Summary | Revenue and units by product |
-| Monthly Trend | Monthly revenue and order totals |
-| Daily Summary | Daily revenue, orders, and units |
+| Monthly Trend | Monthly revenue and sales record totals |
+| Daily Summary | Daily revenue, sales record totals, and units |
 | Monthly Performance | Monthly revenue, target, delta, and achievement summary |
 | Reference Data | Month, salesperson, and region lookup lists |
 | Helper Tables | Supporting calculations used by the dashboard charts |
@@ -40,6 +40,8 @@ The dashboard includes four KPI cards and seven charts:
 - **Delta:** revenue minus target.
 - **Achievement:** revenue divided by target.
 - **Sales records:** count of matching rows in Sales Detail. The workbook has no order ID, so this is not a distinct order count.
+
+The Daily Summary and Monthly Trend tabs use the heading `orders` for these row counts; interpret them as sales records, not unique orders.
 
 The workbook uses rupee formatting. It contains 3,000 sales rows dated January 1 through October 30, 2026, and 80 monthly target rows. Salesperson names are anonymized as `Salesperson 01` through `Salesperson 08`; the sales and target figures are unchanged.
 
